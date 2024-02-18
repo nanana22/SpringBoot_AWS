@@ -28,6 +28,7 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+application-oauth.properties
 
 ### NetBeans ###
 /nbproject/private/
