@@ -1,6 +1,6 @@
 .gradle
-.idea
 application-oauth.properties
+.idea
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
