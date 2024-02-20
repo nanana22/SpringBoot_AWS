@@ -1,7 +1,7 @@
 package com.springboot.aws.project.config.auth;
 
+import com.springboot.aws.project.domain.user.Role;
 import lombok.RequiredArgsConstructor;
-import org.h2.engine.Role;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;

@@ -5,10 +5,15 @@
     <div class="row">
         <div class="col-md-6">
             <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+            <!--if문을 제공하지 않고 true/false 만 판단한다. -> 그래서 머스테치에서는 항상 최종값을 넘겨줘야한다.
+                userName이 있다면 userName을 노출한다.-->
             {{#userName}}
                 Logged in as: <span id="user">{{userName}}</span>
+                <!--href="/logout" : 스프링 시큐리티에서 기본적으로 제공하는 로그아웃 url-->
                 <a href="/logout" class="btn btn-info active" role="button">Logout</a>
             {{/userName}}
+            <!--해당값이 존재하지 않는 경우에 ^를 사용-->}
+            <!--^userName : userName 이 없다면 로그인 버튼 노출-->
             {{^userName}}
                 <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
                 <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>

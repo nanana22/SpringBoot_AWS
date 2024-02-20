@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public class Role {
+public enum Role {
 
 
     //스프링 시큐리티에서는 권한 코드에 항상 ROLE_ 이 앞에 있어야만한다.
