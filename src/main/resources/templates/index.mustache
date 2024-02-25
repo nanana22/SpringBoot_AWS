@@ -12,7 +12,7 @@
                 <!--href="/logout" : 스프링 시큐리티에서 기본적으로 제공하는 로그아웃 url-->
                 <a href="/logout" class="btn btn-info active" role="button">Logout</a>
             {{/userName}}
-            <!--해당값이 존재하지 않는 경우에 ^를 사용-->}
+            <!--해당값이 존재하지 않는 경우에 ^를 사용-->
             <!--^userName : userName 이 없다면 로그인 버튼 노출-->
             {{^userName}}
                 <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
